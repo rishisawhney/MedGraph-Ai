@@ -185,5 +185,6 @@ if query:
                 # Generate the Voice!
             audio_fp = speak_text(display_answer)
             st.audio(audio_fp, format='audio/mp3')
-                
+            
             st.session_state.messages.append({"role": "assistant", "content": display_answer})
+            
